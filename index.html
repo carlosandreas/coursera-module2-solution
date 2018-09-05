@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Module 2 Solution</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-family: Helvetica;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+div {
+  border: 1px solid black;
+  background-color: grey;
+  height: 180px;
+  margin: 1%;
+  font-family: Open Sans, Helvetica;
+  font-size: 12px;
+  color: white;
+  padding: 10px;
+  position: relative;
+  float: all;
+  align-content: center;
+}
+
+#p1 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 80px;
+  height: 40px;
+  padding: 6px;
+  margin: 0px;
+  font-family: Open Sans, Helvetica;
+  font-size: 15px;
+  text-align: right;
+  font-weight: bold;
+  background-color: green;
+
+} 
+#p2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+ width: 80px;
+  height: 40px;
+  padding: 6px;
+  margin: 0px;
+  font-family: Open Sans, Helvetica;
+  font-size: 15px;
+  font-weight: bold;;
+  text-align: right;
+  background-color: red;
+} 
+#p3 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+ width: 80px;
+  height: 40px;
+  padding: 6px;
+  margin: 0px;
+  font-family: Open Sans, Helvetica;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: right;
+  background: blue;
+} 
+section {
+  padding-top: 50px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large **********/
+@media (min-width: 992px) {
+	  .col-lg-1, .col-lg-2, .col-lg-3 {
+	  	float: left;
+	  	  }
+  .col-lg-1 {
+    width: 30%;
+  }
+  .col-lg-2 {
+    width: 62%;
+  }
+  .col-lg-3 {
+    width: 60%;
+  }
+	  }
+
+/********** Med **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+	  	float: left;
+	  	  }
+  .col-md-1 {
+    width: 40%;
+  }
+  .col-md-2 {
+    width: 82%;
+  }
+  .col-md-3 {
+    width: 60%;
+  }
+	  }
+	}
+
+	/********** Small **********/
+@media (max-width: 767px) {
+  .col-xs-1, .col-xs-2, .col-xs-3 {
+	  	  }
+  .col-xs-1 {
+  }
+  .col-xs-2 {
+  }
+  .col-xs-3 {
+  }
+	  }
+}
+ 
+
+</style>
+</head>
+<body>
+  <h1> My menu</h1>
+  <div class="col-lg-1 col-md-1 col-xs-3"><p id="p1"> Chicken</p> <section> 
+
+Lorem ipsum dolor sit amet consectetur adipiscing elit montes, sagittis nisl dignissim eu lacus fermentum justo potenti purus, natoque integer mollis aliquet vehicula netus nullam. Himenaeos euismod nullam condimentum mi congue mattis eros sollicitudin.</section></div>
+  <div class="col-lg-1 col-md-1 col-xs-3""><p id="p2"> Beef</p> <section> Lorem ipsum dolor sit amet consectetur adipiscing elit montes, sagittis nisl dignissim eu lacus fermentum justo potenti purus, natoque integer mollis aliquet vehicula netus nullam. Himenaeos euismod nullam condimentum mi congue mattis eros sollicitudin.</section></div>
+  <div class="col-lg-1 col-md-2 col-xs-3""><p id="p3"> Sushi</p> <section> Lorem ipsum dolor sit amet consectetur adipiscing elit montes, sagittis nisl dignissim eu lacus fermentum justo potenti purus, natoque integer mollis aliquet vehicula netus nullam. Himenaeos euismod nullam condimentum mi congue mattis eros sollicitudin. </section></div>
+
+
+</body>
+</html>
